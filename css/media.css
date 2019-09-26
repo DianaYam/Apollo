@@ -1,0 +1,165 @@
+
+@media screen and (min-width:1700px) {  :root{font-size:20px;}   }
+@media screen and (min-width:1400px) {  :root{font-size:18px;}   }
+@media screen and (max-width:800px) {  :root{font-size:15px;}   }
+@media screen and (max-width:700px) {  :root{font-size:14px;}   }
+
+@media screen and (max-width:700px) {
+    body{
+        padding:0;
+    }
+
+    .typical-block {
+        margin-bottom: 20px;
+    }
+
+    header {
+        background-size: auto 100%, 40% auto;
+    }
+
+    .modal-wrapper {
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px) {
+    .header__main-text{
+        margin-top:110px;
+    }
+
+    .header__main-text p{
+        width:100%;
+    }
+
+    header {
+        background-size: auto 100%, auto 35%;
+    }
+}
+
+/*  about-me  */
+
+@media screen and (max-width:700px) {
+    .about-me{
+        background-position:40px 0, right 8% bottom;
+        background-size:auto 100%, 25% auto;
+        padding-top: 5vw;
+    }
+
+    .about-me__main-text{
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+
+    .social-links{
+        left:calc(5% + 2vw);
+        bottom:6vw;
+    }
+
+    .hide-on-700px{
+        display:none;
+    }
+}
+@media screen and (max-width:500px) {
+    .about-me{
+        background-position:40px 0, right 8% bottom 4vw;
+        background-size:auto 100%, 100px auto;
+    }
+}
+
+
+/*  slider и slider2  */
+
+@media screen and (max-width:800px) {
+    .switch1:checked ~ .controls label:nth-child(3),
+    .switch2:checked ~ .controls label:nth-child(1),
+    .switch3:checked ~ .controls label:nth-child(2),
+    .switch1:checked ~ .controls label:nth-child(2),
+    .switch2:checked ~ .controls label:nth-child(3),
+    .switch3:checked ~ .controls label:nth-child(1){
+        height: 50px;
+        width: 50px;
+    }
+    .controls {
+        top: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .switch1:checked ~ .controls label:nth-child(3),
+    .switch2:checked ~ .controls label:nth-child(1),
+    .switch3:checked ~ .controls label:nth-child(2),
+    .switch1:checked ~ .controls label:nth-child(2),
+    .switch2:checked ~ .controls label:nth-child(3),
+    .switch3:checked ~ .controls label:nth-child(1){
+        background-color: rgba(255,255,255,0.6);
+    }
+    #switch12:checked ~ .slides2 .image2 article:nth-child(1) img,
+    #switch22:checked ~ .slides2 .image2 article:nth-child(2) img,
+    #switch32:checked ~ .slides2 .image2 article:nth-child(3) img{
+        width:200%;
+        left: -50%;
+    }
+    .controls1 label{
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    .modal {
+        width: 100%;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .slider1-wrapper:after {
+        display: none;
+    }
+}
+
+
+/*  stairs  */
+
+@media screen and (max-width:850px) {
+    .stairs{
+        background: #EFEFEF url('../img/letter-l.png') 40px 0 / auto 100% no-repeat;
+    }
+
+    .stairs__main-text p{
+        width:100%;
+    }
+}
+
+/*  feedback*/
+
+@media screen and (max-width:850px) {
+    .hide-on-850px {
+        display: none;
+    }
+
+    .feedback-form-group_fl-left,
+    .feedback-form-group_fl-right{
+        width:100%;
+        float:none;
+    }
+
+    .feedback-form-group ::-webkit-input-placeholder{
+        text-align:center;
+    }
+
+    .feedback-form-group :-ms-input-placeholder{
+        text-align:center;
+    }
+
+    #feedback-form{
+        margin:0;
+        position:absolute;
+        top:6em;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .feedback-form-group textarea{
+        height:calc(3em + 50px);
+    }
+}
